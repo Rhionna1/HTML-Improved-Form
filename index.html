@@ -13,15 +13,25 @@
     <main>
         <h2>Vacation Contest Sign-Up Form</h2>
         <form method="GET" action="results.html">
+            <!--Rhionna added required fields First/last name below-->
+            <!--Rhionna added min/max lengths set to first/last name-->
             <div>
+                <span class ="required-field">*</span>
                 <label for="firstname">Your First Name</label>
-                <input type="text" id="firstname" name="firstname">
+                <input type="text" id="firstname" name="firstname" minlength="2" maxlength="35">
+                <span class="required-field">*</span>
                 <label for="lastname">Your Last Name</label>
-                <input type="text" id="lastname" name="lastname">
+                <input type="text" id="lastname" name="lastname" minlength="2" maxlength="35">
+                <!--Rhionna added age label/input below-->
+                <!--Rhionna added min/max age limits-->
+                <label for="age">Your Age</label>
+                <input type="number" name="age" id="age" min="21" max="120">
             </div>
             <fieldset>
                 <legend>Your Contact Info</legend>
                 <div>
+                    <!--Rhionna added required field for email-->
+                    <span class="required-field">*</span>
                     <label for="email">Your Email</label>
                     <input type="email" id="email" name="email">
                 </div>
@@ -85,8 +95,9 @@
                         <option value="WV">West Virginia</option>
                         <option value="WY">Wyoming</option>
                     </datalist>
+                    <!--Rhionna changed type attribute for zipcode-->
                     <label for="zip">Your Zipcode</label>
-                    <input type="text" id="zip" name="zip">
+                    <input type="number" id="zip" name="zip">
                 </div>
             </fieldset>
 
